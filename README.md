@@ -1,2 +1,3 @@
-# wordle
-The wordle-type game I created during SCNC 2026, just for fun since I was helping judge this time around.
+# Not Wordle
+
+<img width="1196" height="527" alt="image" src="https://github.com/user-attachments/assets/47bd6240-49b0-4acf-bf0d-c25bcb327b8e" />

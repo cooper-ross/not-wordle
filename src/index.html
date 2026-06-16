@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Wordle</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@hiseb/confetti@2.1.0/dist/confetti.min.js"></script>
+</head>
+<body>
+    <article>
+        <section class="title-section">
+            <h1>Not Wordle</h1>
+            <p>Each guess must be a valid 5-letter word. The color of the tiles will change to show how close your guess was to the word.</p>
+        </section>
+        <section id="game-board" class="game-board"></section>
+        <section id="keyboard" class="keyboard"></section>
+    </article>
+
+    <div id="popup-overlay" class="popup-overlay hidden">
+        <section class="popup">
+            <h2 class="popup-title" id="popup-title">Congratulations!</h2>
+            <p class="popup-subtitle" id="popup-subtitle">You guessed the word!</p>
+            <div class="popup-score">
+                <span class="popup-score-label">Score</span>
+                <span class="popup-score-value" id="popup-score-value">1</span>
+                <span class="popup-score-max">/ <span id="popup-score-max">6</span></span>
+            </div>
+            <div class="popup-actions">
+                <button id="popup-redo" class="popup-btn popup-btn-secondary">Redo Game</button>
+                <button id="popup-new" class="popup-btn popup-btn-primary">New Game</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
